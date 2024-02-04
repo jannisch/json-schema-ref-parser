@@ -11,8 +11,8 @@ if (host.node) {
  * Helper functions for getting local filesystem paths in various formats
  */
 function filesystemPathHelpers() {
-  const nodePath = require('path');
-  const nodeUrl = require('url');
+  const nodePath = require('node:path');
+  const nodeUrl = require('node:url');
   const testsDir = nodePath.resolve(__dirname, '..');
 
   // Run all tests from the "test" directory
